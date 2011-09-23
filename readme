@@ -1,0 +1,6 @@
+# Create a graph for a drupal profile
+# requires pydot library ( python-pydot package in ubuntu) 
+
+Exampe usage:
+
+python drupalprofilegraph.py /var/www/drupal7/profiles/myprofile  /var/www/drupal7/sites/mysite/modules/custom ~/outputdir
