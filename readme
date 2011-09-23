@@ -4,3 +4,24 @@
 Exampe usage:
 
 python drupalprofilegraph.py /var/www/drupal7/profiles/myprofile  /var/www/drupal7/sites/mysite/modules/custom ~/outputdir
+
+Important info on yourprofile.info
+
+the script expects two "markers" in the correct order
+
+Custom modules : these will be colored red
+Development modules: everything after that will not be included in core
+
+example excerpt:
+
+.
+.
+.
+;Custom modules 
+dependencies[] = mycustommodule
+dependencies[] = myfeature
+
+
+;Development modules
+dependencies[] = devel
+dependencies[] = views_ui
